@@ -3,7 +3,8 @@
 
 ## Write a short comment describing this function
 
-makeCacheMatrix <- function(x = matrix()) {## Initialize the inverse property
+makeCacheMatrix <- function(x = matrix()) {
+  ## Initialize the inverse property
   i <- NULL
   
   ## Method to set the matrix
@@ -33,13 +34,13 @@ makeCacheMatrix <- function(x = matrix()) {## Initialize the inverse property
   list(set = set, get = get,
        setInverse = setInverse,
        getInverse = getInverse)
-
 }
 
 
 ## Write a short comment describing this function
 
-cacheSolve <- function(x, ...) {## Return a matrix that is the inverse of 'x'
+cacheSolve <- function(x, ...) {
+  ## Return a matrix that is the inverse of 'x'
   m <- x$getInverse()
   
   ## Just return the inverse if its already set
@@ -59,5 +60,4 @@ cacheSolve <- function(x, ...) {## Return a matrix that is the inverse of 'x'
   
   ## Return the matrix
   m
-        ## Return a matrix that is the inverse of 'x'
 }
